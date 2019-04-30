@@ -1,0 +1,51 @@
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code,
+h6 > code,
+ul li > code,
+p code,
+a code {
+    /** removes funny font fize when <code /> lives in tags other than <pre /> */
+    font-size: 0.9em !important;
+    border-radius: 2px;
+    font-style: normal;
+}
+
+.gatsby-highlight {
+    max-width: 40rem;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.gatsby-highlight pre {
+    padding: 1rem !important;
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+    font-family:
+ "Dank Mono",
+ "PT Mono",
+ Consolas,
+ Monaco,
+ "Andale Mono",
+        "Ubuntu Mono",
+ monospace !important;
+}
+
+/**
+ * dracula palette https://github.com/dracula/dracula-theme
+ */
+.language-diff .deleted {
+    color: #f55; /* dracula red */
+}
+
+.language-diff .inserted {
+    color: #50fa7b; /* dracula green */
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: 2px 5px;
+}

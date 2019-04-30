@@ -8,8 +8,7 @@ import PostTags from "../../components/PostTags";
 import SocialLinks from "../../components/SocialLinks";
 import SEO from "../../components/SEO";
 import config from "../../../data/SiteConfig";
-import "../b16-tomorrow-dark.css";
-import "./index.css";
+import s from "./s.module.scss";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -29,7 +28,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
+          <div className={s.post}>
             <h1>{post.title}</h1>
             <h3>
               <a href={`/author/${_.kebabCase(post.author.id)}`}>
@@ -37,9 +36,6 @@ export default class PostTemplate extends React.Component {
               </a>
             </h3>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className="post-meta">
-              <PostTags tags={post.tags} />
-            </div>
           </div>
         </div>
       </Layout>

@@ -21,6 +21,18 @@ module.exports = {
     "MarkdownRemark.frontmatter.author": `AuthorYaml`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass")
+      }
+    },
     "gatsby-transformer-yaml",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
@@ -42,6 +54,15 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              usePrefix: true,
+              providers: {
+                include: ["Twitter"]
+              }
+            }
+          },
           {
             resolve: "gatsby-remark-images",
             options: {

@@ -6,6 +6,7 @@ category: blog
 tags:
   - gatsby
 cover: ""
+listed: true
 ---
 
 ## Headers

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import s from "./s.module.scss";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -24,11 +25,19 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <h2>
-            <Link to={post.path} key={post.title}>
-              {post.title}
-            </Link>
-          </h2>
+          <div className={s.post}>
+            <h2>
+              <Link to={post.path} key={post.title}>
+                {post.title}
+              </Link>
+            </h2>
+            <p>
+              {post.excerpt}
+              <Link className={s.read} to={post.path}>
+                Read ⟶
+              </Link>
+            </p>
+          </div>
         ))}
       </div>
     );

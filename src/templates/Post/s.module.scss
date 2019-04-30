@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+:local {
+    .post {
+        background: white;
+        padding: 1rem;
+        line-height: 2rem;
+
+        blockquote {
+            margin-left: -1rem;
+            margin-right: -1rem;
+            border-left: 7px solid #444;
+            background: #fafafa;
+        }
+    }
+
+    .date {
+        padding: 1rem;
+        margin-bottom: 0;
+        background: white;
+    }
+}

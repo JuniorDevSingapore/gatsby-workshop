@@ -1,11 +1,11 @@
 const config = {
-  siteTitle: "Gatsby Starter Multiple Author", // Site title.
+  siteTitle: "Gatsby Curious Community", // Site title.
   siteTitleShort: "Multi Author Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Multi Author Starter", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://gatsby-starter-multiple-author.netlify.com/", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A Gatsby starter for blogs of multiple authors.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "JuniorDev.SG builders with Gatsby", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "", // GA tracking ID.

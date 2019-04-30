@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Intro from "../components/Intro";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
@@ -14,9 +15,7 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <section>
-            <Link to="/authors">All authors</Link>
-          </section>
+          <Intro />
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
@@ -32,6 +31,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { listed: { ne: false } } }
     ) {
       edges {
         node {
