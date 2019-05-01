@@ -20,6 +20,8 @@ Last Saturday, this happened:
 
 If you missed it, too bad 🙉 And so we're here again to make it less bad. Here's a bit of wrap up of what we did in the workshop.
 
+In this recap, we'll share more about the imperative knowledge as well as pulling a bunch of resources together so you can refer back to where you'd like to go for your next step.
+
 ## What is Gatsby
 
 Gatsby is a static site generator based on React and GraphQL. Both libraries bring their elements (?) into Gatsby that comprise of Gatsby's unique strengths:
@@ -39,8 +41,6 @@ We then browsed through the starters library as well as the plugins. Before you 
 - [Gatsbygram Case Study](https://www.gatsbyjs.org/blog/gatsbygram-case-study/)
 
 By the way, if you missed the workshop but would like to have the chance to learn to build Gatsby sites, I recommend that you follow [the tutorial from Gatsby's official doc](https://www.gatsbyjs.org/tutorial/). It'll probably take you a good half day. This set-by-step tutorial is truly a gem that you should not miss. The quality and the completeness of the materials are unmatched.
-
-In this recap, we'll share more about the imperative knowledge as well as pulling a bunch of resources together so you can refer back to where you'd like to go for your next step.
 
 ## Up and running
 
