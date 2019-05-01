@@ -20,6 +20,17 @@ $ npm install
 $ npm run develop
 ```
 
+## Adding your post
+
+- Add your post under directory `content/directory-to-your-post/`
+- If it is your first post, add your profile info inside `content/author.yaml`. Note that the name you put for `author` under your post's front matter should match `id` in the details you put in the YAML file.
+
+```yaml
+- id: Curious Cat # should match `author` in your post's frontmatter author
+  bio: Very curious about this world and blogging whenever learned something new
+  twitter: nonexistencecuriouscat
+```
+
 ## Workshop content
 
 ### Design intention
