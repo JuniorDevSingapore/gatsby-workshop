@@ -21,6 +21,7 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
+    const { cover, coverVisit, coverCreditProfile, coverCredit } = post;
     return (
       <Layout>
         <div>
@@ -28,6 +29,16 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
+          {!!cover && !!coverCreditProfile && !!coverCredit && (
+            <div className={s.coverImage}>
+              <img className={s.coverImage} src={cover} />
+              <small className={s.coverCredit}>
+                {coverVisit ? <a href={coverVisit}>photo</a> : photo}
+                {` by `}
+                <a href={coverCreditProfile}>{coverCredit}</a>
+              </small>
+            </div>
+          )}
           <div className={s.post}>
             <h1>{post.title}</h1>
             <h3>
@@ -52,7 +63,6 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover
         date
         category
         tags
@@ -61,6 +71,10 @@ export const pageQuery = graphql`
           bio
           twitter
         }
+        cover
+        coverVisit
+        coverCredit
+        coverCreditProfile
       }
       fields {
         nextTitle

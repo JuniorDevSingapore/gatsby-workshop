@@ -7,6 +7,9 @@ category: blog
 tags:
   - gatsby
 cover: ""
+coverVisit: ""
+coverCredit: ""
+coverCreditProfile: ""
 ---
 
 I am a React developer, and I am a fan of Dan Abramov’s. In December of last year, he created a new blog site called overreacted.io 😲 I really love the theme and the typography he chooses just personally. And he also has those coffee indicators for how long it might take to read.

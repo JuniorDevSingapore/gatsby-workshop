@@ -1,6 +1,31 @@
 @import "../../styles/variables.scss";
 
 :local {
+    .coverImage {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        position: relative;
+    }
+
+    .coverImage img {
+        margin-bottom: -8px;
+    }
+
+    .coverCredit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        white-space: nowrap;
+        mix-blend-mode: overlay;
+        padding: 2px 4px;
+        border-radius: 2px;
+        color: white;
+    }
+
+    .coverCredit a {
+        color: white;
+    }
+
     .post {
         background: white;
         padding: 1rem;

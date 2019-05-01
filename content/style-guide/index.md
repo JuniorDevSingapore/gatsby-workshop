@@ -6,7 +6,10 @@ category: blog
 tags:
   - gatsby
 cover: ""
-listed: true
+coverVisit: ""
+coverCreditProfile: ""
+coverCredit: ""
+listed: false
 ---
 
 ## Headers

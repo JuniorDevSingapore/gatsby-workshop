@@ -6,7 +6,10 @@ author: Wei Gao
 category: blog
 tags:
   - gatsby
-cover: ""
+cover: https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80
+coverVisit: https://unsplash.com/photos/aOC7TSLb1o8
+coverCredit: Lauren Mancke
+coverCreditProfile: https://unsplash.com/@laurenmancke
 ---
 
 Hello my fellow junior developers!!
